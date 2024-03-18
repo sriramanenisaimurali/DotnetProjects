@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "KEtB0Yc0qe/h80gywRi7VNMB4O6mgYLRtlJIyPEViv8=",
+  "Source": "RoutingExample",
+  "BasePath": "_content/RoutingExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "RoutingExample\\wwwroot",
+      "Source": "RoutingExample",
+      "ContentRoot": "C:\\Projects\\RoutingExample\\RoutingExample\\wwwroot\\",
+      "BasePath": "_content/RoutingExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Projects\\RoutingExample\\RoutingExample\\wwwroot\\docs.pdf",
+      "SourceId": "RoutingExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\RoutingExample\\RoutingExample\\wwwroot\\",
+      "BasePath": "_content/RoutingExample",
+      "RelativePath": "docs.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs.pdf"
+    },
+    {
+      "Identity": "C:\\Projects\\RoutingExample\\RoutingExample\\wwwroot\\img1.jpg",
+      "SourceId": "RoutingExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\RoutingExample\\RoutingExample\\wwwroot\\",
+      "BasePath": "_content/RoutingExample",
+      "RelativePath": "img1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img1.jpg"
+    },
+    {
+      "Identity": "C:\\Projects\\RoutingExample\\RoutingExample\\wwwroot\\sample.txt",
+      "SourceId": "RoutingExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\RoutingExample\\RoutingExample\\wwwroot\\",
+      "BasePath": "_content/RoutingExample",
+      "RelativePath": "sample.txt",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sample.txt"
+    }
+  ]
+}

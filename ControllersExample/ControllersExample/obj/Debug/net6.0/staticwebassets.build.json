@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "Hash": "pidsWamA7J8iadMVAXWdCR70V96q3fpFtUspRsZw3xU=",
+  "Source": "ControllersExample",
+  "BasePath": "_content/ControllersExample",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "ControllersExample\\wwwroot",
+      "Source": "ControllersExample",
+      "ContentRoot": "C:\\Projects\\ControllersExample\\ControllersExample\\wwwroot\\",
+      "BasePath": "_content/ControllersExample",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Projects\\ControllersExample\\ControllersExample\\wwwroot\\docs.pdf",
+      "SourceId": "ControllersExample",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Projects\\ControllersExample\\ControllersExample\\wwwroot\\",
+      "BasePath": "_content/ControllersExample",
+      "RelativePath": "docs.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\docs.pdf"
+    }
+  ]
+}

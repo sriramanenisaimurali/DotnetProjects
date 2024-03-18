@@ -1,0 +1,114 @@
+﻿@model PersonResponse
+@{
+    ViewBag.Title = "Delete Person";
+}
+
+<a asp-controller="persons" asp-action="index" class="link-hover">Back to persons list</a>
+<h2>Delete Person</h2>
+<h3>Are you sure want to delete ?</h3>
+
+<div class="center-box">
+    <form asp-controller="Persons" asp-action="Delete" method="post">
+        @*Person Name*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="PersonName" class="form-label pt">Person Name</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="PersonName" class="form-input" disabled="disabled"/>
+                <span asp-validation-for="PersonName" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Email*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="Email" class="form-label pt">Email</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="Email" class="form-input" disabled="disabled" />
+                <span asp-validation-for="Email" class="text-red"></span>
+            </div>
+        </div>
+
+        @*DateOfBirth*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="DateOfBirth" class="form-label pt">Date of birth</label>
+            </div>
+            <div class="flex-1">
+                <input asp-for="DateOfBirth" class="form-input" disabled="disabled" />
+                <span asp-validation-for="DateOfBirth" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Gender*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label class="form-label pt">Gender</label>
+            </div>
+            <div class="flex-1">
+                @{
+                    string[] genders = (string[])Enum.GetNames(typeof(GenderOptions));
+                    foreach(string gender in genders)
+                    {
+                        <input type="radio" asp-for="Gender" id="@gender" value="@gender" class="ml" disabled="disabled" />
+                        <label for="@gender">@gender</label>
+                    }
+                }
+                <div>
+                    <span asp-validation-for="Gender" class="text-red"></span>
+                </div>
+            </div>
+        </div>
+
+        @*Countries*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label class="form-label pt" asp-for="CountryId">Country</label>
+            </div>
+            <div class="flex-1">
+                <select asp-for="CountryId" class="form-input" asp-items="@ViewBag.Countries" disabled="disabled">
+                    <option value="">Please select</option>
+                    @*@foreach(CountryResponse country in ViewBag.Countries)
+                    {
+                        <option value="@country.CountryId">@country.CountryName</option>
+                    }*@
+                </select>
+                <span asp-validation-for="CountryId" class="text-red"></span>
+            </div>
+        </div>
+
+        @*Address*@
+        <div class="form-field flex">
+            <div class="w-25">
+                <label asp-for="Address" class="form-label pt">Address</label>
+            </div>
+            <div class="flex-1">
+                <textarea asp-for="Address" class="form-input" disabled="disabled"></textarea>
+            </div>
+        </div>
+
+        @*ReceiveNewsLetters*@
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <input asp-for="ReceiveNewsLetters" value="true" disabled="disabled" />
+                <label asp-for="ReceiveNewsLetters" class="form-label">Receive News Letters</label>
+            </div>
+        </div>
+
+        @*Delete*@
+        <div class="form-field flex">
+            <div class="w-25">
+            </div>
+            <div class="flex-1">
+                <button class="button button-red-back">Delete</button>
+                <div asp-validation-summary="All" class="text-red ml"></div>
+            </div>
+        </div>
+      
+    </form>
+</div>
+

@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Person;
+
+<! DOCTYPE html>
+<html>
+    @*<head>
+        <title>Demo Project</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="~/StyleSheet.css" />
+    </head>*@
+    <body>
+        <div class="page-content">
+            <h3>Person Details</h3>
+            <div class="box w-50 float-left">
+                @Model.Name
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>
+                                Date Of Birth
+                            </td>
+                            <td>
+                                @Model.DateOfBirth?.ToString("dd/MMM/yyyy")
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Gender
+                            </td>
+                            <td>
+                                @Model.PersonGender
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="w-100-display-flex">
+                <a href="/">Back to Home</a>
+            </div>
+        </div>  
+    </body>
+</html>

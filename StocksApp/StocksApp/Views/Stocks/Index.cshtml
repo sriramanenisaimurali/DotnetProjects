@@ -1,0 +1,48 @@
+﻿@model StocksApp.Models.StockDetails;
+@{
+    ViewBag.Title = "Stock Market";
+}
+
+<div class="box trading-panel">
+    <div class="flex trading-panel-flex">
+        <div class="stock">
+            <h1 class="stock-title">@Model.StockSymbol</h1>
+            <table>
+                <tbody class="text-justify">
+                    <tr>
+                        <td>Current Price:</td>
+                        <th><small>$</small><span class="price">@Model.CurrentPrice</span></th>
+                    </tr>
+                    <tr>
+                        <td>Change:</td>
+                        <th><small>$</small><span class="price">@Model.Change</span></th>
+                    </tr>
+                    <tr>
+                        <td>Percentage Change:</td>
+                        <th><small>$</small><span class="price">@Model.PercentChange</span></th>
+                    </tr>
+                    <tr>
+                        <td>High Price of the Day:</td>
+                        <th><small>$</small><span class="price">@Model.HighPriceOfTheDay</span></th>
+                    </tr>
+                    <tr>
+                        <td>Low Price of the Day:</td>
+                        <th><small>$</small><span class="price">@Model.LowPriceOfTheDay</span></th>
+                    </tr>
+                    <tr>
+                        <td>Open Price of the Day:</td>
+                        <th><small>$</small><span class="price">@Model.OpenPriceOfTheDay</span></th>
+                    </tr>
+                    <tr>
+                        <td>Previous closure Price:</td>
+                        <th><small>$</small><span class="price">@Model.PreviousClosePrice</span></th>
+                    </tr>
+                    <tr>
+                        <td>Total Price:</td>
+                        <th><small>$</small><span class="price">@Model.Total</span></th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

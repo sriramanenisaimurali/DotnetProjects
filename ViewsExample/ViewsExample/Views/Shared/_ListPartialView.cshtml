@@ -1,0 +1,12 @@
+﻿@model ListModel
+<div class="box">
+    <h3>@Model.ListName</h3>
+    <div class="list-container">
+        <ul class="list">
+            @foreach(string item in Model.ListItems)
+            {
+                <li>@item</li>
+            }
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Person>;
+
+<!DOCTYPE html>
+<html>
+    @*<head>
+        <title>Demo Project</title>
+        <meta charset="utf-8" />
+        <link href="~/StyleSheet.css" rel="stylesheet" />
+    </head>*@
+    <body>
+    <div class="page-content">
+        <h3>Welcome</h3>
+        
+        @foreach (Person person in Model)
+        {
+            <div class="box float-left w-50">
+                @person.Name
+                <table class="table w-100">
+                    <tbody>
+                        <tr>
+                            <td class="w-50">
+                                Gender
+                            </td>
+                            <td class="w-50">
+                                @person.PersonGender
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-50">
+                                Date Of Birth
+                            </td>
+                            <td class="w-50">
+                                @person.DateOfBirth?.ToString("dd/MMM/yyyy")
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="/personal-details/@person.Name">Get Details</a>
+            </div>
+        }
+    </div>       
+</body>
+</html>

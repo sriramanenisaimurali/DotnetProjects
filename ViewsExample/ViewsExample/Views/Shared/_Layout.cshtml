@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" charset="utf-8" />
+    <title>Demo Project</title>
+    <link href="~/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="navbar-brand">views Demo Project</div>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/person">Persons</a></li>
+                <li><a href="/products">Products</a></li>
+                <li><a href="/employee-data">Employees</a></li>
+            </ul>
+        </div>
+        <div class="page-content">
+            @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
